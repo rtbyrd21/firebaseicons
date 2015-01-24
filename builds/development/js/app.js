@@ -28,6 +28,10 @@ myApp.config(['$routeProvider', function($routeProvider) {
       templateUrl: 'views/meetings.html',
       controller:  'MeetingsController'
     }).
+  when('/comprehension', {
+      templateUrl: 'views/comprehension.html',
+      controller:  'ComprehensionController'
+    }).
     otherwise({
       redirectTo: '/login'
     });

@@ -28,7 +28,7 @@ myApp.factory('Authentication', function($firebase,
          }
          firebaseUsers.$set(authData.uid, userInfo);
           factory.authorized = authData.uid; //Set the property here
-         $location.path('/meetings');
+         $location.path('/comprehension');
       }).catch(function(error) {});
     } 
   
