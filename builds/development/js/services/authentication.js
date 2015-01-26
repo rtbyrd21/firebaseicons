@@ -1,5 +1,18 @@
 myApp.factory('Authentication', function($firebase, 
-  $firebaseAuth, FIREBASE_URL, $location, $rootScope) {
+  $firebaseAuth, FIREBASE_URL, $location, $rootScope, $route) {
+  
+  
+$rootScope.$on('$routeChangeStart', function(next, current) { 
+   console.log('change');
+  var scrollToTop = window.setInterval(function() {
+    var pos = window.pageYOffset;
+    if ( pos > 0 ) {
+        window.scrollTo( 0, pos - 20 ); // how far to scroll on each step
+    } else {
+        window.clearInterval( scrollToTop );
+    }
+}, .05);
+ });  
 
   var ref = new Firebase(FIREBASE_URL);
     var simpleLogin = $firebaseAuth(ref);
@@ -29,6 +42,7 @@ myApp.factory('Authentication', function($firebase,
          firebaseUsers.$set(authData.uid, userInfo);
           factory.authorized = authData.uid; //Set the property here
          $location.path('/comprehension');
+         
       }).catch(function(error) {});
     } 
   
