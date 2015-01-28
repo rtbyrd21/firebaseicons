@@ -32,6 +32,10 @@ myApp.config(['$routeProvider', function($routeProvider) {
       templateUrl: 'views/comprehension.html',
       controller:  'ComprehensionController'
     }).
+  when('/results', {
+      templateUrl: 'views/results.html',
+      controller:  'ResultsController'
+    }).
     otherwise({
       redirectTo: '/login'
     });
