@@ -662,11 +662,25 @@ background-image: url(../images/icons/damage1.png);
 float: left;
 }
 
+.damageimage1a{
+height:160px;
+width:160px;
+background-image: url(../images/icons/damage1a.png);
+float: left;
+}
+
 .damageimage2{
 height:250px;
 width:250px;
 background-image: url(../images/icons/damage2.png);
 /*background-color: grey;*/
+float: left;
+}
+
+.damageimage2a{
+height:160px;
+width:160px;
+background-image: url(../images/icons/damage2a.png);
 float: left;
 }
 
@@ -678,11 +692,25 @@ background-image: url(../images/icons/damage3.png);
 float: left;
 }
 
+.damageimage3a{
+height:160px;
+width:160px;
+background-image: url(../images/icons/damage3a.png);
+float: left;
+}
+
 .physicaltherapyimage1{
 height:250px;
 width:250px;
 background-image: url(../images/icons/physicaltherapy1.png);
 /*background-color: grey;*/
+float: left;
+}
+
+.physicaltherapyimage1a{
+height:160px;
+width:160px;
+background-image: url(../images/icons/physicaltherapy1a.png);
 float: left;
 }
 
@@ -694,6 +722,13 @@ background-image: url(../images/icons/physicaltherapy2.png);
 float: left;
 }
 
+.physicaltherapyimage2a{
+height:160px;
+width:160px;
+background-image: url(../images/icons/physicaltherapy2a.png);
+float: left;
+}
+
 .physicaltherapyimage3{
 height:250px;
 width:250px;
@@ -702,12 +737,25 @@ background-image: url(../images/icons/physicaltherapy3.png);
 float: left;
 }
 
+.physicaltherapyimage3a{
+height:160px;
+width:160px;
+background-image: url(../images/icons/physicaltherapy3a.png);
+float: left;
+}
 
 .ocularimage1{
 height:250px;
 width:250px;
 background-image: url(../images/icons/ocular1.png);
 /*background-color: grey;*/
+float: left;
+}
+
+.ocularimage1a{
+height:160px;
+width:160px;
+background-image: url(../images/icons/ocular1a.png);
 float: left;
 }
 
@@ -719,6 +767,13 @@ background-image: url(../images/icons/ocular2.png);
 float: left;
 }
 
+.ocularimage2a{
+height:160px;
+width:160px;
+background-image: url(../images/icons/ocular2a.png);
+float: left;
+}
+
 .ocularimage3{
 height:250px;
 width:250px;
@@ -727,12 +782,25 @@ background-image: url(../images/icons/ocular3.png);
 float: left;
 }
 
+.ocularimage3a{
+height:160px;
+width:160px;
+background-image: url(../images/icons/ocular3a.png);
+float: left;
+}
 
 .skinimage1{
 height:250px;
 width:250px;
 background-image: url(../images/icons/skin1.png);
 /*background-color: grey;*/
+float: left;
+}
+
+.skinimage1a{
+height:160px;
+width:160px;
+background-image: url(../images/icons/skin1a.png);
 float: left;
 }
 
@@ -744,6 +812,13 @@ background-image: url(../images/icons/skin2.png);
 float: left;
 }
 
+.skinimage2a{
+height:160px;
+width:160px;
+background-image: url(../images/icons/skin2a.png);
+float: left;
+}
+
 .skinimage3{
 height:250px;
 width:250px;
@@ -752,10 +827,18 @@ background-image: url(../images/icons/skin3.png);
 float: left;
 }
 
+.skinimage3a{
+height:160px;
+width:160px;
+background-image: url(../images/icons/skin3a.png);
+float: left;
+}
+
 ul{
 text-align: left;
-padding-left: 45%;
+padding-left: 12%;
 padding-bottom: 50px;
+float: left;
 }
 
 select{
@@ -765,3 +848,12 @@ font-size: 15px !important;
 .intro{
 color:black;
 }
+
+ul, li{
+font-size: .8rem;
+}
+
+.xp{
+padding-right:7%;
+}
+
