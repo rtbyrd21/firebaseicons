@@ -41,7 +41,7 @@ $rootScope.$on('$routeChangeStart', function(next, current) {
          }
          firebaseUsers.$set(authData.uid, userInfo);
           factory.authorized = authData.uid; //Set the property here
-         $location.path('/comprehension');
+         $location.path('/instructions');
          
       }).catch(function(error) {});
     } 

@@ -606,7 +606,47 @@ nav ul li a:hover {
 height:400px;
 }
 
-.iconimage{
+.iconimage1{
+height:250px;
+width:250px;
+background-image: url(../images/icons/tubes.png);
+/*background-color: grey;*/
+float: left;
+}
+
+.iconimage2{
+height:250px;
+width:250px;
+background-image: url(../images/icons/blood.png);
+/*background-color: grey;*/
+float: left;
+}
+
+.iconimage3{
+height:250px;
+width:250px;
+background-image: url(../images/icons/circulatory.png);
+/*background-color: grey;*/
+float: left;
+}
+
+.iconimage4{
+height:250px;
+width:250px;
+background-image: url(../images/icons/lungs.png);
+/*background-color: grey;*/
+float: left;
+}
+
+.iconimage5{
+height:250px;
+width:250px;
+background-image: url(../images/icons/damage3.png);
+/*background-color: grey;*/
+float: left;
+}
+
+.iconimage6{
 height:250px;
 width:250px;
 background-image: url(../images/icons/therapy.png);
@@ -614,6 +654,29 @@ background-image: url(../images/icons/therapy.png);
 float: left;
 }
 
+.iconimage7{
+height:250px;
+width:250px;
+background-image: url(../images/icons/ocular.png);
+/*background-color: grey;*/
+float: left;
+}
+
+.iconimage8{
+height:250px;
+width:250px;
+background-image: url(../images/icons/skin.png);
+/*background-color: grey;*/
+float: left;
+}
+
+.iconimage9{
+height:250px;
+width:250px;
+background-image: url(../images/icons/physicaltherapy2.png);
+/*background-color: grey;*/
+float: left;
+}
 textarea{
 width:400px;
 min-height: 100px;

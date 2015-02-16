@@ -36,6 +36,10 @@ myApp.config(['$routeProvider', function($routeProvider) {
       templateUrl: 'views/results.html',
       controller:  'ResultsController'
     }).
+  when('/instructions', {
+      templateUrl: 'views/instructions.html',
+      controller:  'MeetingsController'
+    }).
     otherwise({
       redirectTo: '/login'
     });

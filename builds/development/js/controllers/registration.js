@@ -11,6 +11,10 @@ myApp.controller('RegistrationController',
   $scope.register = function() {
     $location.path('/meetings');
   } //login
+  
+  $scope.begin = function() {
+    $location.path('/meetings');
+  } //login
 
 }); //RegistrationController
 

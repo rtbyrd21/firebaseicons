@@ -47,6 +47,21 @@ myApp.controller('ComprehensionController',
     });
   } //addmeeting
   
+  
+ $scope.addInfo=function() {
+    meetingsInfo.$push({
+      info: [{
+              "gender": 'male',
+              "age": '21',
+              "experience": '1',
+              }             
+             ],
+      date: Firebase.ServerValue.TIMESTAMP
+    }).then(function() {
+      $location.path('/meetings');
+    });
+  } //addmeeting
+  
   $scope.deleteMeeting=function(key) {
     meetings.$remove(key);
   } //deletemeeting

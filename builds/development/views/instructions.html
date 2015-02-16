@@ -1,0 +1,94 @@
+<section class="login">
+  <form name="myform" 
+   ng-submit="begin()"
+   novalidate>
+
+<div class="consent">
+<div>
+<h1>Medical Symbol Comprehension Project</h1>
+<h2>Instructions</h2>
+<p>IRB# 2013-2415</p>
+</div>
+
+<div style="text-align:left;">
+<br>
+<div>
+
+<input ng-model="info.gender" type="radio" name="sex" value="male" checked>Male
+<br>
+<input ng-model="info.gender" type="radio" name="sex" value="female">Female
+<br>
+<br>
+<label>Age: </label>
+<input ng-required="true" style="width:50px;" ng-model="info.age" type="text" name="age">
+  {{info.age}}
+<br>
+<br>
+<div class="cf">
+<p>Please rate your medical literacy.</p>
+<ul style="padding-bottom:0px;">
+       <li>0 = below average</li>
+       <li>1 = standard</li>
+       <li>2 = advanced</li>
+     </ul>
+</div>
+<div>
+<select ng-model="info.experience">
+       <option ng-repeat="n in [] | range:3" value="{{n}}" ng-required="true">{{n}}</option>
+       </select>
+</div>
+
+</div>
+
+<br>
+<br>
+<div>
+<p>
+Please try to explain as well as possible the meaning the symbols have for you and the actions
+you would take in case of using them.
+</p>
+</div>
+<p>
+The following two icons are examples of how to and how not to answer the questions.
+</p>
+
+<h2>How NOT to Answer</h2>
+ <div class="individualwrapper" ng-repeat="n in [] | range:1">
+      
+       <div class="iconimage9" style="margin-right: 20px;">
+       </div>
+       
+       <div class="icontext">
+        <p>Imagine that you are in a health care facility.</p> 
+        <p>Exactly what do you think this symbol means?</p>
+         <textarea type="text" name="interpretation_1"
+        ng-attr-name="interpretation{{$index + 1}}" placeholder="Band-aid"></textarea>
+         <p>If you were a patient, how would this symbol apply to you?</p>
+          <textarea type="text" name="action{{$index + 1}}" placeholder="Cut"></textarea>  
+      </div>
+      </div>
+      
+      
+<h2>How to Answer</h2>
+ <div class="individualwrapper" ng-repeat="n in [] | range:1">
+      
+       <div class="iconimage9" style="margin-right: 20px;">
+       </div>
+       
+       <div class="icontext">
+        <p>Imagine that you are in a health care facility.</p> 
+        <p>Exactly what do you think this symbol means?</p>
+         <textarea type="text" name="interpretation_1"
+        ng-attr-name="interpretation{{$index + 1}}" placeholder="This symbol would represent a band-aid or bandage for a minor injury."></textarea>
+         <p>If you were a patient, how would this symbol apply to you?</p>
+          <textarea type="text" name="action{{$index + 1}}" placeholder="This would inform me of the severity and common use of the treatment."></textarea>  
+      </div>
+      </div>      
+
+
+
+    <button type="submit" class="btn"
+      ng-disabled="myform.$invalid">Begin</button>
+    
+  </form>
+</section>
